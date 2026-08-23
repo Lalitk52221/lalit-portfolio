@@ -33,13 +33,13 @@ export default function Contact() {
             <Mail size={18} /> Lalit.kumar885124@gmail.com
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/lalit-kumar-90589a1a5/"
             className="px-8 py-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition flex items-center gap-3"
           >
             <LiaLinkedin size={18} /> LinkedIn
           </a>
           <a
-            href="#"
+            href="https://github.com/Lalitk52221"
             className="px-8 py-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition flex items-center gap-3"
           >
             <BsGithub size={18} /> GitHub
