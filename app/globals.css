@@ -4,7 +4,7 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-
+/* 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -23,4 +23,95 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+/* app/globals.css */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #0b0d10;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .glow-text {
+    background: linear-gradient(135deg, #c084fc, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .glass-card {
+    background: rgba(20, 25, 35, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+  }
+  .hover-glow:hover {
+    box-shadow: 0 0 20px rgba(96, 165, 250, 0.2), 0 0 60px rgba(192, 132, 252, 0.1);
+    transition: all 0.3s ease;
+  }
+  .skill-tag {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.2s;
+  }
+  .skill-tag:hover {
+    background: rgba(96, 165, 250, 0.1);
+    border-color: #60a5fa;
+    transform: translateY(-2px);
+  }
+  .nav-link {
+    position: relative;
+    color: #a0aec0;
+    transition: color 0.2s;
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, #c084fc, #60a5fa);
+    transition: width 0.25s ease;
+  }
+  .nav-link:hover {
+    color: #f0f4ff;
+  }
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  .project-img {
+    background: linear-gradient(145deg, #1a1f2b, #11161f);
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    color: #4a5568;
+    font-size: 2.5rem;
+    border: 1px solid #2d3748;
+  }
+  .pulse-glow {
+    animation: soft-pulse 2s infinite;
+  }
+}
+
+@keyframes soft-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(96, 165, 250, 0.3);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(96, 165, 250, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(96, 165, 250, 0);
+  }
 }
