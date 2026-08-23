@@ -1,7 +1,7 @@
 // components/Skills.tsx
 "use client";
 
-import { Code, CheckCircle } from "lucide-react";
+import { Code} from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 const skillItem = [

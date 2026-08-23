@@ -6,6 +6,8 @@ import Resume from '@/components/Resume';
 import Contact from '@/components/Contact';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+// import Contact2 from '@/components/Contact2';
+import WhatsAppFloat from '@/components/WhatsAppFloat';
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
         <Work />
         <Resume />
         <Contact />
+        {/* <Contact2/> */}
+        <WhatsAppFloat/>
       </div>
       <Footer />
     </main>
