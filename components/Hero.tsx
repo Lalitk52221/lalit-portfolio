@@ -4,6 +4,7 @@
 import { ArrowRight, Send } from 'lucide-react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -50,9 +51,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-2 border-indigo-400/30 shadow-2xl shadow-indigo-500/10">
-            <div className="w-full h-full bg-linear-to-br from-indigo-900/40 to-blue-900/40 flex items-center justify-center text-7xl text-indigo-300/30">
-              <span>👨‍🚀</span>
-            </div>
+            {/* <div className="w-full h-full bg-linear-to-br from-indigo-900/40 to-blue-900/40 flex items-center justify-center text-7xl text-indigo-300/30"> */}
+              <Image src="/Lalit.jpg" width={500} height={500} alt='profile-photo' className='w-full h-full flex items-center justify-center' loading='eager' />
+            {/* </div> */}
           </div>
         </motion.div>
       </div>

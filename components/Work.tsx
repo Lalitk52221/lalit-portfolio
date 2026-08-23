@@ -9,6 +9,9 @@ const projects = [
   { title: 'AI SaaS Platform', desc: 'Next.js, Tailwind, OpenAI API', icon: '🧠' },
   { title: 'EcoCommerce', desc: 'Full-stack with Stripe, React', icon: '🌿' },
   { title: 'Portfolio Builder', desc: 'Drag & drop, Next.js, Firebase', icon: '✏️' },
+  { title: 'AI SaaS Platform', desc: 'Next.js, Tailwind, OpenAI API', icon: '🧠' },
+  { title: 'EcoCommerce', desc: 'Full-stack with Stripe, React', icon: '🌿' },
+  { title: 'Portfolio Builder', desc: 'Drag & drop, Next.js, Firebase', icon: '✏️' },
 ];
 
 export default function Work() {

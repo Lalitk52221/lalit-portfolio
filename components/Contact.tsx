@@ -30,7 +30,7 @@ export default function Contact() {
             href="mailto:Lalit@example.com"
             className="px-8 py-3 rounded-full bg-linear-to-r from-indigo-500 to-blue-500 text-white font-medium shadow-lg shadow-indigo-500/20 pulse-glow flex items-center gap-3"
           >
-            <Mail size={18} /> Lalit@example.com
+            <Mail size={18} /> Lalit.kumar885124@gmail.com
           </a>
           <a
             href="#"
