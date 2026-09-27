@@ -1,7 +1,9 @@
 // components/Resume.tsx
 'use client';
 
-import { FileText, Download } from 'lucide-react';
+import { FileText, 
+  // Download 
+} from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const experiences = [
