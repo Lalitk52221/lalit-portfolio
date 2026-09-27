@@ -6,19 +6,13 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    title: 'Senior Full-Stack Developer',
-    company: 'TechVault Inc.',
-    period: '2022 – Present',
+    title: 'Full-Stack Developer',
+    company: 'TechVanch Innovations.',
+    period: 'Aug 2024 – Dec 25',
     desc: 'Architected microservices, led frontend team, improved performance by 40%. Built internal tools for data analytics.',
     tags: ['React', 'Node', 'AWS'],
   },
-  {
-    title: 'Founder & Lead Dev',
-    company: 'Startup Studio',
-    period: '2020 – 2022',
-    desc: 'Launched 3 MVP products. Raised pre-seed, managed remote team, handled product strategy & full-stack development.',
-    tags: ['Next.js', 'Python', 'MongoDB'],
-  },
+  
 ];
 
 export default function Resume() {
@@ -26,7 +20,7 @@ export default function Resume() {
     <section id="resume">
       <div className="flex items-center gap-3 mb-8">
         <FileText className="text-2xl text-indigo-400" />
-        <h2 className="text-3xl font-bold text-white">Resume & Experience</h2>
+        <h2 className="text-3xl font-bold text-white">Job Experience</h2>
         <span className="flex-1 h-px bg-linear-to-r from-white/10 to-transparent" />
       </div>
 
@@ -68,12 +62,12 @@ export default function Resume() {
         transition={{ duration: 0.5, delay: 0.3 }}
         viewport={{ once: true }}
       >
-        <a
+        {/* <a
           href="#"
           className="inline-block glass-card px-8 py-3.5 rounded-full text-sm font-medium border border-white/10 hover:border-indigo-400/30 transition"
         >
           <Download className="inline mr-2" size={16} /> Download Full Resume (PDF)
-        </a>
+        </a> */}
       </motion.div>
     </section>
   );

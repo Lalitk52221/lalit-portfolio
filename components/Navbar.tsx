@@ -20,7 +20,7 @@ export default function Navbar() {
     <header className="fixed top-0 w-full z-50 glass-card border-b border-white/5">
       <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         <Link href="#home" className="text-2xl font-bold tracking-tight">
-          <span className="glow-text">RK</span>
+          <span className="glow-text">LK</span>
         </Link>
 
         {/* Desktop Nav */}
